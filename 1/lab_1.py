@@ -17,8 +17,8 @@ for i in range(1, 100):
 print(list_num)
 
 # Splitting the list into two separate ones: even and odd numbers
-even_num = []
-odd_num = []
+even_num=[]
+odd_num=[]
 for i in list_num:
     if i % 2 == 0: # check if the number is even
         even_num.append(i) # adding a number to a list
@@ -27,14 +27,17 @@ for i in list_num:
 print(even_num)
 print(odd_num)
 
-
+# calculate average for even numbers
 average = 0
 if len(even_num) == 0: # check that the list is not empty
-    print('empty list') #print result
+    print('empty list') # print result
 else:
-# calculate average for even numbers
     average = sum(even_num) / len(even_num)
     print('Average for even numbers', average)
+
 # calculate average for odd numbers
+if len(odd_num) == 0: # check that the list is not empty
+    print('empty list') # print result
+else:
     average = sum(odd_num) / len(odd_num)
     print('Average for odd numbers', average)
