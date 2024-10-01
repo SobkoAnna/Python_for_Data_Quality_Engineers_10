@@ -38,6 +38,12 @@ final_text = ''.join(new_list)  # Join all sentences from list to string
 print(final_text)
 
 # Count the number of spaces in the text
+count_on_text = 0
+symbols_to_count = [" ", "\t", "\n"]
+for s in symbols_to_count:
+     count_on_text += final_text.count(s)
+print('Number of whitespace ', count_on_text)
+
 count_on_text = []
 count_on_text = re.findall(r'\s', final_text)
-print('Number of whitespace ', len(count_on_text))
+print (len(count_on_text))
