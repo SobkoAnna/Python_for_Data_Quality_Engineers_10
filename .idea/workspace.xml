@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba2b5b6-bd69-4b89-930c-09a68cf4caf5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/3/lab_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3/draft_lab_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4/function_lab_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3/lab_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/3/lab_3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,18 +39,22 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.draft_lab_3.executor": "Run",
+    "Python.function_lab_2.executor": "Run",
     "Python.lab_1.executor": "Run",
     "Python.lab_2.executor": "Run",
     "Python.lab_3.executor": "Run",
+    "Python.test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/Anna_Sobko/Desktop/Python for Data Quality Engineers #10/Python_for_Data_Quality_Engineers_10",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "Console"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Anna_Sobko\Desktop\Python for Data Quality Engineers #10\Python_for_Data_Quality_Engineers_10" />
       <recent name="C:\Users\Anna_Sobko\Desktop\Python for Data Quality Engineers #10\Python_for_Data_Quality_Engineers_10\1" />
     </key>
   </component>
