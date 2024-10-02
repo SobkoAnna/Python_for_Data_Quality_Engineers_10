@@ -19,6 +19,7 @@ for sentence in sentences:
 joined_text = ''.join(normalized_sentences)     # Join all sentences from list to string
 
 normal_sentences = re.split(r'[.]\s*', joined_text)
+
 last_words = []
 for sentence in normal_sentences:
     if sentence.strip():
@@ -28,6 +29,7 @@ last_sentence = ' '.join(last_words)  # Join all words
 last_sentence = last_sentence.capitalize()  # Normalizing new sentence
 
 new_list = []
+print(normalized_sentences)
 for item in normalized_sentences:
     if "paragraph" in item:
         item = f'{item}. {last_sentence}'  # Inserting new sentence after "paragraph" word
@@ -35,7 +37,7 @@ for item in normalized_sentences:
     else:
         new_list.append(item)   # Adding next sentence to the text
 final_text = ''.join(new_list)  # Join all sentences from list to string
-print(final_text)
+# print(final_text)
 
 # Count the number of spaces in the text
 count_on_text = 0
