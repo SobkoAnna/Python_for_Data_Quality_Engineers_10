@@ -1,0 +1,21 @@
+News feeds: 
+News -----------
+Something happened
+London, 06/10/2024 03:53
+
+News -----------
+Something other happened
+NY, 06/10/2024 03:53
+
+Private Ad -----------
+I want to sell a bike
+Actual until: 01/03/2025, 145 day left
+
+RentInfo -----------
+City : Austin, Budget: 850
+Status: moderate, Apartments found: 6
+
+RentInfo -----------
+City : Chicago, Budget: 5000
+Status: expensive, Apartments found: 11
+
