@@ -1,0 +1,24 @@
+News feeds: 
+RentInfo -----------
+City : Austin,
+Rent_description: Three-bedrooms, one bath with an enclosed porch in front and back, rent_price: 500
+Status: Cheap housing
+
+RentInfo -----------
+City : New York
+Rent_description: Three bedroom wintered bungalow, rent_price: 3000
+Status: Average price of housing
+
+Private Ad -----------
+Road 95 is closed for repairs.
+Actual until: 25/12/2024, 79 day left
+
+News -----------
+Lord Voldemort is dead
+London, 06/10/2024 15:36
+
+RentInfo -----------
+City : New York
+ Rent_description: Single story contemporary style house with a usable area of 115 square meters, rent_price: 7000
+Status: Expensive housing
+
