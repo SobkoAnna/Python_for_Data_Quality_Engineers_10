@@ -9,13 +9,16 @@ sys.path.append(parent_dir)
 from modules import function_3_lab as func_file
 from collections import Counter
 import csv
-import string
+import json
 class Main:
     def __init__(self):
         self.date_now = datetime.now()
         self.file_name = "news_feed.txt"
         self.new_file_name = "new_news_feed.txt"
         self.folder_path = "./news_feed.txt"
+        self.json_path = "./file.json"
+        self.yellow = "\033[33m"
+        self.reset = "\033[0m"
 
     @staticmethod
     def create_block(type_feeld, text, notes):
@@ -31,12 +34,21 @@ class Main:
 
         self.CsvFile()
 
+    def check_exist_file(self, file):
+        try:
+            if not os.path.exists(file):
+                raise FileNotFoundError
+        except FileNotFoundError:
+            print(self.yellow + f"Error when try read file: {file}" + self.reset)
+            sys.exit(1)
+        return True
     def menu(self):
         helps = """News feeds:
             1. News
             2. Private ad
             3. Rent Info
             4. Provide records by text file
+            5. Provide records by json file
             0. Exit
 
         """
@@ -198,6 +210,51 @@ class Main:
                     writer.writerow([letter,count,uppercase,f"{percentage:.2f}%"])
 
 
+    class JsonFile:
+        def __init__(self,main, numb_records,json_path):
+            self.main = main
+            self.json_path = json_path
+            self.numb_records = numb_records
+            self.list_records = []
+            self.read_file()
+            self.get_records()
+        def read_file(self):
+            self.main.check_exist_file(self.json_path)
+            with open(self.json_path) as file:
+                data = json.load(file)
+            data_records = data
+
+            if type(data_records) == dict:
+                if len(data_records) == 1:
+                    for key, records in data_records.items():
+                        self.list_records = data_records[key]
+            elif type(data_records) == list:
+                self.list_records = data_records
+            return self.list_records
+        def get_records(self):
+            self.yellow = "\033[33m"
+            self.reset = "\033[0m"
+            list_feeds = self.list_records
+
+            if abs(self.numb_records) > len(list_feeds):
+                print(self.yellow + "There are ",len(list_feeds),"records in the file. All records will be moved." + self.reset)
+                self.numb_records = len(list_feeds)
+            if self.numb_records > 0:
+                test_list = list_feeds[:self.numb_records]
+            else:
+                 test_list = list_feeds[self.numb_records:]
+            self.writeJsonTxt(test_list)
+
+        def writeJsonTxt(self, test_list):
+            with open("output.txt", "a", encoding="utf-8") as file:
+                for dictionary in test_list:
+                    for key, value in dictionary.items():
+                        if key == 'type':
+                            file.write(f"{value}\n")
+                        else:
+                            file.write(f"{key}: {value}\n")
+                    file.write("\n")
+
 
     def run(self):
         while True:
@@ -243,6 +300,20 @@ class Main:
                 print('Successful')
                 time.sleep(2)
                 break
+
+            if choice == "5":
+                numb_records = int(input("Enter the number of records to be moved: "))
+                print()
+                print('Default path to file: ',self.json_path)
+                json_path = input("If the path to the file is different, enter it: ")
+                if len(json_path) == 0:
+                    json_path = self.json_path
+                self.JsonFile(menu, numb_records, json_path)
+                self.MoveInfo.remove_file(menu, json_path)
+                print('Successful')
+                time.sleep(2)
+                break
+
             elif choice == "0":
                 break
 
