@@ -1,0 +1,20 @@
+RentInfo -----------
+City: Austin
+Rent_description: Three-bedrooms, one bath with an enclosed porch in front and back, rent_price: 500
+Status: Cheap housing
+
+RentInfo -----------
+City: New York
+Rent_description: Three bedroom wintered bungalow, rent_price: 3000
+Status: Average price of housing
+
+RentInfo -----------
+City: Austin
+Rent_description: Three-bedrooms, one bath with an enclosed porch in front and back, rent_price: 500
+Status: Cheap housing
+
+RentInfo -----------
+City: New York
+Rent_description: Three bedroom wintered bungalow, rent_price: 3000
+Status: Average price of housing
+

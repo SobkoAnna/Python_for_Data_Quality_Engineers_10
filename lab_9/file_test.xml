@@ -1,0 +1,31 @@
+<NewsFeeds>
+    <feed>
+        <type>RentInfo -----------</type>
+        <City>Austin</City>
+        <Rent_description>Three-bedrooms, one bath with an enclosed porch in front and back, rent_price: 500</Rent_description>
+        <Status>Cheap housing</Status>
+    </feed>
+    <feed>
+        <type>RentInfo -----------</type>
+        <City>New York</City>
+        <Rent_description>Three bedroom wintered bungalow, rent_price: 3000</Rent_description>
+        <Status>Average price of housing</Status>
+    </feed>
+    <feed>
+        <type>Private Ad -----------</type>
+        <text>Road 95 is closed for repairs.</text>
+        <Actual_until>25/12/2024, 79 day left</Actual_until>
+    </feed>
+    <feed>
+        <type>News -----------</type>
+        <text>Lord Voldemort is dead</text>
+        <City>London,</City>
+        <date>06/10/2024 15:36</date>
+    </feed>
+    <feed>
+        <type>RentInfo -----------</type>
+        <City>New York</City>
+        <Rent_description>Single story contemporary style house with a usable area of 115 square meters, rent_price: 7000</Rent_description>
+        <Status>Expensive housing</Status>
+    </feed>
+</NewsFeeds>
